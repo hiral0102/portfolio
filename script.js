@@ -1,27 +1,16 @@
 /* ELEMENTS */
 
 const body = document.body;
-
 const header = document.querySelector(".header");
-
 const themeToggle = document.getElementById("themeToggle");
-
 const menuToggle = document.getElementById("menuToggle");
-
 const navMenu = document.getElementById("navMenu");
-
 const navLinks = document.querySelectorAll(".nav-link");
-
 const sections = document.querySelectorAll("section[id]");
-
 const revealElements = document.querySelectorAll(".reveal");
-
 const contactForm = document.getElementById("contactForm");
-
 const formStatus = document.getElementById("formStatus");
-
 const currentYear = document.getElementById("currentYear");
-
 
 /* CURRENT YEAR */
 
