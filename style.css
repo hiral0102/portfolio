@@ -1936,7 +1936,7 @@ img {
 
 /* MOBILE HERO ORDER  */
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 768px) {
 
     .hero-container {
         display: flex;
