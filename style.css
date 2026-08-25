@@ -763,6 +763,10 @@ img {
     font-size: 0.75rem;
 }
 
+.mobile-profile {
+    display: none;
+}
+
 
 /* ABOUT */
 
@@ -1933,73 +1937,39 @@ img {
 
 }
 
-
-/* MOBILE HERO ORDER  */
+/* MOBILE PROFILE LAYOUT */
 
 @media screen and (max-width: 768px) {
 
+    /* Hide desktop profile picture */
+    .hero-container > .profile-wrapper {
+        display: none;
+    }
+
+    /* Show mobile profile picture */
+    .mobile-profile {
+        display: block;
+        width: 100%;
+        max-width: 280px;
+        margin: 25px auto 28px;
+    }
+
+    .mobile-profile .profile-border {
+        width: 100%;
+    }
+
+    .mobile-profile .profile-image {
+        width: 100%;
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+        object-position: center;
+    }
+
     .hero-container {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
+        display: block;
     }
 
     .hero-content {
-        display: contents;
-    }
-
-    /* Greeting */
-    .availability {
-        order: 1;
-        align-self: flex-start;
-        margin-bottom: 0;
-    }
-
-    .hero-greeting {
-        order: 2;
         width: 100%;
-        margin-bottom: -25px;
-    }
-
-    /* Name */
-    .hero-title {
-        order: 3;
-        width: 100%;
-        margin-bottom: 0;
-    }
-
-    /* Profile picture directly after name */
-    .profile-wrapper {
-        order: 4;
-        width: 100%;
-        max-width: 280px;
-        margin: 10px auto 5px;
-    }
-
-    /* Student title */
-    .hero-role {
-        order: 5;
-        width: 100%;
-        margin-bottom: 0;
-    }
-
-    /* About text */
-    .hero-description {
-        order: 6;
-        width: 100%;
-        margin-bottom: 0;
-    }
-
-    /* Buttons */
-    .hero-buttons {
-        order: 7;
-        width: 100%;
-    }
-
-    /* Social links */
-    .hero-socials {
-        order: 8;
-        width: 100%;
-        margin-top: 5px;
     }
 }
